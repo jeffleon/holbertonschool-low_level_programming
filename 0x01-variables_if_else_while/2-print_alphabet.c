@@ -1,12 +1,14 @@
 #include <stdio.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ * Description:user blabalabalabll
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 int i;
 char alphabeto[] = "abcdefghijklmnopqrstuvwxyz";
-for (i = 0; i < 27; i++)
+for (i = 0; i < 26; i++)
 putchar(alphabeto[i]);
 putchar('\n');
 return (0);

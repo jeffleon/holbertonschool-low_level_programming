@@ -10,7 +10,7 @@ int i;
 char alphabeto[] = "abcdefghijklmnopqrstuvwxyz";
 for (i = 0; i < 26; i++)
 putchar(alphabeto[i]);
-for (i = 'A'; i <='Z'; ++i)
+for (i = 'A'; i <= 'Z'; ++i)
 putchar(i);
 putchar('\n');
 return (0);

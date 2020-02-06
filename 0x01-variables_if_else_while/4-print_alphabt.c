@@ -7,9 +7,9 @@ int main(void)
 {
 int i;
 char alphabeto[] = "abcdefghijklmnopqrstuvwxyz";
-for(i=0;i<26;i++)
+for (i = 0; i < 26; i++)
 {
-if(alphabeto[i]!='q' && alphabeto[i]!='e')
+if (alphabeto[i] != 'q' && alphabeto[i] != 'e')
 putchar(alphabeto[i]);
 }
 putchar('\n');

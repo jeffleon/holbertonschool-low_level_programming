@@ -6,8 +6,8 @@
 int main(void)
 {
 int i;
-char alfabeto[]="abcdefghijklmnopqrstuvwxyz";
-for(i=25;i>=0;i--)
+char alfabeto[] = "abcdefghijklmnopqrstuvwxyz";
+for (i = 25; i >= 0; i--)
 putchar(alfabeto[i]);
 putchar('\n');
 return (0);

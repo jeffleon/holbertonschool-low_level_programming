@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <ctype.h>
 /**
  * _isalpha - Entry point
  * @x: dasdhjksakd
@@ -8,11 +7,21 @@
  */
 int _isalpha(int x)
 {
-	int reto;
+	int y = 26, reto;
+	char letra = 'a';
+	char Letra = 'A';
 
-	if (isalpha(x) != 0)
+	do {
+	letra++;
+	Letra++;
+	if (letra == x || Letra == x)
+	{
 	reto = 1;
+	break;
+	}
 	else
 	reto = 0;
+	y--;
+	} while (y != 0);
 	return (reto);
 }

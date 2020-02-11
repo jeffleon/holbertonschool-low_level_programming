@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdlib.h>
 /**
  * print_last_digit - Entry point
  * @c: sadjlaks
@@ -8,8 +7,8 @@
  */
 int print_last_digit(int c)
 {
-	int a, b;
-
-	_putchar(a % 10 + '0');
-	return (a % 10);
+	if (c < 0)
+	c = c * -1;
+	_putchar(c % 10 + '0');
+	return (c % 10);
 }

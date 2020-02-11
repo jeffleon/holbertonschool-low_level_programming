@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include "holberton.h"
 /**
  * _abs - Entry point
@@ -8,6 +7,9 @@
  */
 int _abs(int c)
 {
-	return (abs(c));
+	if (c<0)
+	return(c*-1);
+	else
+	return(c);
 }
 

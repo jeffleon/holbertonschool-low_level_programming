@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <ctype.h>
 /**
  * _islower - Entry point
  * @x:hkdjhaks
@@ -8,12 +7,17 @@
  */
 int _islower(int x)
 {
-	int low, reto = 0;
+	int w, reto = 0;
 
-	low = islower(x);
-	if (low != 0)
+	for (w='a'; w < 'z'; w++)
+	{
+	if (w == x)
+	{
 	reto = 1;
+	break;
+	}
 	else
 	reto = 0;
+	}
 	return (reto);
 }

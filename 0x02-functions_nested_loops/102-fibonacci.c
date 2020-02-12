@@ -9,7 +9,7 @@ void main(void)
 	int a;
 	long long flag, A_af = 1, A_be = 0;
 
-	for (a = 1; a <= 50; a++)
+	for (a = 1; a <= 49; a++)
 	{
 		flag = A_af;
 		A_af = A_be + A_af;
@@ -22,4 +22,5 @@ void main(void)
 		}
 	}
 	putchar('\n');
+	return (0);
 }

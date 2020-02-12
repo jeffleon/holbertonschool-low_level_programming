@@ -9,13 +9,13 @@ int main(void)
 	int a;
 	long int flag, A_af = 1, A_be = 0;
 
-	for (a = 1; a <= 49; a++)
+	for (a = 1; a <= 50; a++)
 	{
 		flag = A_af;
 		A_af = A_be + A_af;
 		A_be = flag;
 		printf("%ld", A_af);
-		if (a != 49)
+		if (a != 50)
 		{
 			putchar(',');
 			putchar(' ');

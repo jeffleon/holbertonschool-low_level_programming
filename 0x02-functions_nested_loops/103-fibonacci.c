@@ -4,7 +4,7 @@
  * Description:user blabalabalabll
  * Return: Always 0 (Success)
  */
-void main(void)
+int main(void)
 {
 	int a;
 	long long int flag, A_af = 1, A_be = 0, sum = 0;

@@ -7,7 +7,7 @@
 int main(void)
 {
 	int a;
-	long long int flag, A_af = 1, A_be = 0, sum = 0;
+	long long int flag, A_af = 1, A_be = 1, sum = 0;
 
 	for (a = 1; a < 4000000; a++)
 	{

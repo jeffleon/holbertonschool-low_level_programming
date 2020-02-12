@@ -6,10 +6,11 @@
  */
 int main(void)
 {
-	int a;
-	long long int flag, A_af = 1, A_be = 0, sum = 0;
+	long int a;
+	long int flag, A_af = 1, A_be = 1;
+	unsigned long sum = 0;
 
-	for (a = 1; a < 4000000; a++)
+	for (a = 1; a < 33; a++)
 	{
 	flag = A_af;
 	A_af = A_be + A_af;
@@ -19,7 +20,7 @@ int main(void)
 		sum = sum + A_af;
 	}
 	}
-	printf("%lld", sum);
+	printf("%lu", sum);
 	putchar('\n');
 	return (0);
 }

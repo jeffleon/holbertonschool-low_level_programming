@@ -19,6 +19,6 @@ int main(void)
 			sum = sum + A_af;
 		}
 	}
-	printf("%lld\n", sum);
+	printf("%ld\n", sum);
 	return (0);
 }

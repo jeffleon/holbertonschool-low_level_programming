@@ -13,7 +13,7 @@ int main(void)
 	{
 		if (a % 3 == 0 && a % 5 == 0)
 		{
-			printf("Fizzbuzz");
+			printf("FizzBuzz");
 		}
 		else if (a % 3 == 0)
 		{

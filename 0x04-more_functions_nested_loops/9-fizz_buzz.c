@@ -8,15 +8,25 @@
 int main(void)
 {
 	int a;
-	char *s;
-	char b[4];
 
 	for (a = 1; a <= 100; a++)
 	{
-		sprintf(b, "%d ", a);
-		s = (a % 3 == 0) ? (a % 5 == 0) ? "Fizzbuzz " : "Fizz " :
-		(a % 5 == 0) ? "Buzz " : b;
-		printf("%s", s);
+		if (a % 3 == 0 && a % 5 == 0)
+		{
+			printf("Fizzbuzz ");
+		}
+		else if (a % 3 == 0)
+		{
+			printf("Fizz ");
+		}
+		else if (a % 5 == 0)
+		{
+			ptintf("Buzz ");
+		}
+		else
+		{
+			printf("%d ", a);
+		}
 	}
 	putchar('\n');
 	return (0);

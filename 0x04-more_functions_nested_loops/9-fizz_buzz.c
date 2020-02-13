@@ -21,7 +21,7 @@ int main(void)
 		}
 		else if (a % 5 == 0)
 		{
-			ptintf("Buzz ");
+			printf("Buzz ");
 		}
 		else
 		{

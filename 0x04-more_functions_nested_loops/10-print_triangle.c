@@ -20,7 +20,7 @@ void print_triangle(int size)
 		aux = otro;
 		for (b = 1; b <= size; b++)
 		{
-			if (aux < 0)
+			if (aux > 0)
 			{
 			_putchar(' ');
 			aux--;

@@ -7,7 +7,7 @@
 int main(void)
 {
 	unsigned long n = 612852475143;
-	int i, primo = 1, primomax = 0, verificacion = 0;
+	unsigned long i, primo = 1, primomax = 0, verificacion = 0;
 
 	while (n != 1)
 	{
@@ -33,6 +33,6 @@ int main(void)
 			verificacion = 0;
 		}
 	}
-	printf("%d\n", primomax);
+	printf("%lu\n", primomax);
 	return (0);
 }

@@ -13,7 +13,7 @@ void print_rev(char *s)
 	puntero = s;
 	while (*s++)
 	count++;
-	for (i = count; i >= 0; i--)
+	for (i = count; i > 1; i--)
 	{
 		_putchar(puntero[i - 2]);
 	}

@@ -7,15 +7,16 @@
  */
 void rev_string(char *s)
 {
-	int count = 1, i;
-	char *longitud = '\0', p[100];
-
+	int count = 0, i;
+	char *longitud = '\0', flag;
 	longitud = s;
-	while (*longitud++ != '\0')
+	while (*(longitud++) != '\0')
+	count++;
+	count--;
+	for (i = 0; i < count / 2; i++)
 	{
-		p[count - 1] = s[count - 1];
-		count++;
+		flag = s[i];
+		s[i] = s[count - i];
+		s[count - i] = flag;
 	}
-	for (i = 1; i < count; i++)
-	s[i - 1] = p[count - i - 1];
 }

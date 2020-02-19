@@ -14,10 +14,10 @@ void rev_string(char *s)
 	while (*(longitud++) != '\0')
 	count++;
 	count--;
-	for (i = 0; i < count / 2; i++)
+	for (i = 0; i < count; i++)
 	{
-		flag = s[i];
-		s[i] = s[count - i];
-		s[count - i] = flag;
+		flag = *(s + i);
+		*(s + i) = *(s + count);
+		*(s + count--) = flag;
 	}
 }

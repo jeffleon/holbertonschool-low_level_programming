@@ -2,7 +2,7 @@
 #include <string.h>
 /**
  * puts_half - check the code for Holberton School students.
- * @*str
+ * @str: entry pointer
  * Return: Always 0.
  */
 void puts_half(char *str)

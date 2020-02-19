@@ -2,7 +2,7 @@
 #include <string.h>
 /**
  * print_rev - check the code for Holberton School students.
- * @*s
+ * @s: entry pointer
  * Return: Always 0.
  */
 void print_rev(char *s)

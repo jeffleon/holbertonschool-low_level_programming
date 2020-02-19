@@ -2,7 +2,7 @@
 #include <string.h>
 /**
  * puts2 - check the code for Holberton School students.
- * @*str
+ * @str: entry pointer
  * Return: Always 0.
  */
 void puts2(char *str)

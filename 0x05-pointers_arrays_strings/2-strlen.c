@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * _strlen - check the code for Holberton School students.
- * @*s
+ * @s: entry pointer
  * Return: Always 0.
  */
 int _strlen(char *s)

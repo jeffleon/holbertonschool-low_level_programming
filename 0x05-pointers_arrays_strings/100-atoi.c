@@ -7,15 +7,23 @@
  */
 int _atoi(char *s)
 {
-	char *copia = s, numeros[10];
-	int count = 0;
+	char *copia = s;
+	int count = 0, nosignos = 0;
+	unsigned int numero = 0;
 
-	while (*copia++ != '\0')
-	{
-		if (*copia >= 48 && *copia <= 57 || *copia == 45 || *copia == 43)
+	do {
+		if (*copia >= 48 && *copia <= 57)
 		{
-		numeros[0] = *copia;
-		count++;
+			numero = (numero * 10) + (*copia - 48);
+			count++;
 		}
-	}
+		else if (*copia == 45)
+		nosignos++;
+		else
+		if (count > 0)
+		break;
+	} while (*copia++ != '\0');
+	if (nosignos % 2 != 0)
+	numero *= -1;
+	return (numero);
 }

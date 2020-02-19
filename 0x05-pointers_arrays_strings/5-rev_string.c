@@ -9,6 +9,7 @@ void rev_string(char *s)
 {
 	int count = 0, i;
 	char *longitud = '\0', flag;
+
 	longitud = s;
 	while (*(longitud++) != '\0')
 	count++;

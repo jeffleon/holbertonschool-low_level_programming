@@ -8,7 +8,7 @@
 void rev_string(char *s)
 {
 	int count = 1, i;
-	char *longitud = '\0', p[30];
+	char *longitud = '\0', p[100];
 
 	longitud = s;
 	while (*longitud++ != '\0')

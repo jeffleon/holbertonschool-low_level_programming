@@ -22,7 +22,7 @@ char *cap_string(char *s)
 			s[index - 1] == '.' ||
 			s[index - 1] == '}' ||
 			s[index - 1] == '\"' ||
-			s[index - 1] == '}' ||
+			s[index - 1] == '{' ||
 			s[index - 1] == '\t' ||
 			s[index - 1] == '\n' ||
 			s[index - 1] == '\0')

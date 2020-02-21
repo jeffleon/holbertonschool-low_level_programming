@@ -8,10 +8,9 @@
 char *_strcat(char *dest, char *src)
 {
 	char *concat = dest;
-	int longitud1, longitud2, lonconcat;
 
 	while (*concat)
-	*concat++;
+	concat++;
 	while (*src)
 	{
 		*concat++ = *src++;

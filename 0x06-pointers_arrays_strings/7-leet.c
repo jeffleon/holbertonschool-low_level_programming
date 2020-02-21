@@ -5,10 +5,10 @@
  * @s: entry pointer
  * Return: Always 0.
  */
-char *leet(char *s);
+char *leet(char *s)
 {
 	char letras[] = {'a', 'e', 'o', 't', 'l'};
-	int numeros[] = {4, 2, 0, 7, 1};
+	char numeros[] = {'4', '2', '0', '7', '1'};
 	int length = 0, length1 = 0;
 	char caracter;
 
@@ -25,4 +25,5 @@ char *leet(char *s);
 		}
 		length++;
 	}
+	return (s);
 }

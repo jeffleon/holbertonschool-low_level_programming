@@ -8,7 +8,7 @@
 char *leet(char *s)
 {
 	char letras[] = {'a', 'e', 'o', 't', 'l'};
-	char numeros[] = {'4', '2', '0', '7', '1'};
+	char numeros[] = {'4', '3', '0', '7', '1'};
 	int length = 0, length1 = 0;
 	char caracter;
 

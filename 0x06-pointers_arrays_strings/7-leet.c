@@ -12,10 +12,10 @@ char *leet(char *s)
 
 	while (*(s + length))
 	{
-		for (length1 = 0; length1 < 5 ; length1++)
+		for (length1 = 0; length1 < 10 ; length1++)
 		{
-			if (*(s + length) == letras[length1])
-			*(s + length) = numeros[length1];
+			if (*(s + length) == *(letras + length1))
+			*(s + length) = *(numeros + length1);
 		}
 		length++;
 	}

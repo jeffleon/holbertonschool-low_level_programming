@@ -10,7 +10,7 @@ char *cap_string(char *s)
 
 	while (s[index])
 	{
-		if (s[index] >= 97 && s[index] <= 122)
+		if (s[index] >= 'a' && s[index] <= 'z')
 		{
 			if (s[index - 1] == ' ' ||
 			s[index - 1] == '(' ||

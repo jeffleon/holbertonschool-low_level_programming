@@ -4,9 +4,9 @@
  * @s: entry pointer
  * Return: Always 0.
  */
-char *_string_toupper(char *s)
+char *string_toupper(char *s)
 {
-	int cantidad, index = 0;
+	int index = 0;
 
 	while (*(s + index))
 	{

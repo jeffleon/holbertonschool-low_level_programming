@@ -8,10 +8,11 @@ char *cap_string(char *s)
 {
 	int index = 1;
 
-	while (s[index])
+	while (s[index] != '\0')
 	{
-		if (s[index] >= 'a' && s[index] <= 'z')
-		{
+		while (!(s[index] >= 'a' && s[index] <= 'z'))
+		index++;
+
 			if (s[index - 1] == ' ' ||
 			s[index - 1] == '(' ||
 			s[index - 1] == ')' ||

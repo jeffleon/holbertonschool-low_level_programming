@@ -6,7 +6,7 @@
  */
 char *cap_string(char *s)
 {
-	int index = 1;
+	int index = 0;
 
 	while (s[index] != '\0')
 	{
@@ -30,7 +30,6 @@ char *cap_string(char *s)
 			{
 				s[index] -= 32;
 			}
-		}
 		index++;
 	}
 	return (s);

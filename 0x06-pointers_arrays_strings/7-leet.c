@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <ctype.h>
 /**
  * leet - check the code for Holberton School students.
  * @s: entry pointer

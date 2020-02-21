@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _string_toupper - check the code for Holberton School students.
+ * string_toupper - check the code for Holberton School students.
  * @s: entry pointer
  * Return: Always 0.
  */

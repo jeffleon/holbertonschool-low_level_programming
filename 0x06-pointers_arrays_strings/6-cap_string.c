@@ -10,9 +10,9 @@ char *cap_string(char *s)
 
 	while (s[index])
 	{
-		s[0] -= 32;
 		if (s[index] >= 'a' && s[index] <= 'z')
 		{
+			s[0] = index
 			if (s[index - 1] == ' ' ||
 			s[index - 1] == '(' ||
 			s[index - 1] == ')' ||

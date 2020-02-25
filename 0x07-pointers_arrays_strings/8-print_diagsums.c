@@ -13,7 +13,7 @@ void print_diagsums(int *a, int size)
 
 	for (length = 0; length < size; length++)
 		suml += a[(size + 1) * length];
-	for (length = 0; length <= size; length++)
-		sumr += a[(size - 1) * length];
+	for (length = 0; length < size; length++)
+		sumr += a[(size - 1) * (length + 1)];
 	printf("%d, %d\n", suml, sumr);
 }

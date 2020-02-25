@@ -13,7 +13,7 @@ void print_chessboard(char (*a)[8])
 
 	for (length = 0; length < 8; length++)
 	{
-		for(aumentar = 0; a[aumentar][7] != '\0';aumentar++)
+		for (aumentar = 0; a[aumentar][7] != '\0'; aumentar++)
 		{
 			_putchar(a[length][aumentar]);
 		}

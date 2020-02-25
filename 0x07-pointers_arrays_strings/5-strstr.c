@@ -19,13 +19,10 @@ char *_strstr(char *haystack, char *needle)
 			{
 				length++;
 				length1++;
-				aux++;
 			}
 			else
 				haystack++;
 		}
 	}
-	if (aux != 0)
-	return (haystack);
-	return (NULL);
+	return (*haystack != '\0' ? haystack : NULL);
 }

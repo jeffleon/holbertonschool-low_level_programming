@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-
+int wildcmp(char *s1, char *s2);
 int _putchar(char c);
 int factorial(int n);
 int _strlen_recursion(char *s);

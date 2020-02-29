@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
 	int i, add = 0;
 
-	if (argc > 2)
+	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
@@ -24,7 +24,13 @@ int main(int argc, char *argv[])
 				break;
 			}
 		}
-		add >= 0 ? printf("%d\n", add) : printf("Error\n");
+		if (add >=0)
+			printf("%d\n", add);
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
 	}
 	else
 	{

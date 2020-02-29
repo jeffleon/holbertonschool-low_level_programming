@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
 	int i, add = 0;
 
-	if (argc > 1)
+	if (argc != 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
@@ -20,21 +20,13 @@ int main(int argc, char *argv[])
 				add += atoi(argv[i]);
 			else
 			{
-				add = -1;
-				break;
+				printf("Error\n");
+				return (1);
 			}
 		}
-		if (add >=0)
-			printf("%d\n", add);
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
+		printf("%d\n", add);
 	}
 	else
-	{
 		printf("0\n");
-	}
 	return (0);
 }

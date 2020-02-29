@@ -27,6 +27,9 @@ int main(int argc, char *argv[])
 		add >= 0 ? printf("%d\n", add) : printf("Error\n");
 	}
 	else
-	printf("0\n");
+	{
+		printf("0\n");
+		return (1);
+	}
 	return (0);
 }

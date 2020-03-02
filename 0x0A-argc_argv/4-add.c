@@ -1,6 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * finddig - find a digit char
+ * @s: Pointer to the char
+ * Return: 1 if is char and 0 if is number
+ */
+int finddig(char *s)
+{
+	int i = 0;
 
+	while (s[i] != '\0')
+	{
+		if (s[i] >= 48 && s[i] <= 57)
+			i++;
+		else
+			return (1);
+	}
+	return (0);
+}
 /**
  * main - put other points
  * @argc: the size of array
@@ -16,7 +33,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (atoi(*argv[i]) >= 0 && atoi(*argv[i]))
+			if (finddig(argv[i]) == 0)
 				add += atoi(argv[i]);
 			else
 			{

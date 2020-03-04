@@ -18,9 +18,13 @@ char *str_concat(char *s1, char *s2)
 	{}
 	contot = count + count1 + 1;
 	concat = malloc(sizeof(*s1) * contot);
+	if (s1 == 0)
+		s1 = "";
+	if (s2 == 0)
+		s2 = "";
 	if (concat == NULL)
 		return (NULL);
-	for (i = 0; i < count + count1; i++)
+	for (i = 0; i < contot; i++)
 	{
 		if (i < count)
 			concat[i] = s1[i];

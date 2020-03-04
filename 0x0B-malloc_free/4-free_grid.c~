@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+/**
+ * main - put other points
+ * @argv: the address of memory to print
+ * @argc: the size of the memory to print
+ *
+ * Return: Nothing.
+ */
+void free_grid(int **grid, int height);
+{
+	
+	return (0);
+}

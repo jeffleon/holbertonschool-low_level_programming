@@ -18,6 +18,8 @@ char *str_concat(char *s1, char *s2)
 	{}
 	contot = count + count1;
 	concat = malloc(sizeof(*s1) * contot);
+	if (concat == NULL)
+		return (NULL);
 	for (i = 0; i < count + count1; i++)
 	{
 		if (i < count)

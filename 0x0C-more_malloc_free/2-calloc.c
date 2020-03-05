@@ -9,7 +9,7 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *call_oc = malloc(size * nmemb);
+	char *call_oc = malloc(sizeof(char) * size * nmemb);
 	unsigned int i = 0;
 
 	if (nmemb == 0 || size == 0)

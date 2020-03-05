@@ -8,12 +8,10 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int count = 0, count1 = 0, i = 0;
+	unsigned int count = 0, i = 0;
 	char *firword;
 
 	for (count = 0; s1[count]; count++)
-	{}
-	for (count1 = 0; s2[count1]; count1++)
 	{}
 	firword = malloc(count + n + 1);
 	for (i = 0; i < count + n; i++)

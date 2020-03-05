@@ -1,0 +1,8 @@
+*
+!.gitignore
+!README.md
+!*.c
+!*.h 
+?-main.c
+_putchar.c
+

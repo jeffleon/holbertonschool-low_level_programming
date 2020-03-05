@@ -25,15 +25,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (firword == NULL)
 		return (NULL);
 	for (i = 0; *s1; i++)
-        {
-                firword[i] = *s1;
-                s1++;
-        }
-        for (; i < count + n; i++)
-        {
-                firword[i] = *s2;
-                s2++;
-        }
+	{
+		firword[i] = *s1;
+		s1++;
+	}
+	for (; i < count + n; i++)
+	{
+		firword[i] = *s2;
+		s2++;
+	}
 	firword[i] = '\0';
 	return (firword);
 }

@@ -9,14 +9,14 @@
  */
 int *array_range(int min, int max)
 {
-	int *numeros = malloc(sizeof(int) * (max - min) + 1), i = 0;
+	int *numeros = malloc(sizeof(int) * (max - min + 1)), i = 0;
 
 	if (min > max)
 		return (NULL);
 	if (numeros == NULL)
 		return (NULL);
-	for (i = min; i < max + 1; i++)
-		numeros[i - min] = i;
+	for (i = 0; min <= max; i++)
+		numeros[i] = min++;
 	return (numeros);
 }
 

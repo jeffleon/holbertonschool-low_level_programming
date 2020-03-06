@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 	}
 	finum = atol(argv[1]);
 	senum = atol(argv[2]);
-	multi = num1 * num2;
+	multi = finum * senum;
 	printf("%ld\n", multi);
 	return (0);
 }

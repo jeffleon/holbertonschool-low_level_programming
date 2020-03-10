@@ -9,7 +9,7 @@
  */
 char *_strdup(char *str)
 {
-	char *point;
+	char *point = NULL;
 	int count = 0, i = 0;
 
 	if (str == NULL)
@@ -32,7 +32,7 @@ char *_strdup(char *str)
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	char *nombre, *dueno;
+	char *nombre = NULL, *dueno = NULL;
 	dog_t *my_dog;
 
 	if (name != NULL)
@@ -50,15 +50,15 @@ dog_t *new_dog(char *name, float age, char *owner)
 				return (NULL);
 			}
 	}
-	my_dog = malloc(sizeof(dog_t));
+	my_dog = (dog_t*) malloc(sizeof(dog_t));
 	if (my_dog == NULL)
 	{
 		free(nombre);
 		free(dueno);
 		return (NULL);
 	}
-	(*my_dog).name = nombre;
-	(*my_dog).owner = dueno;
-	(*my_dog).age = age;
+	my_dog->name = nombre;
+	my_dog->owner = dueno;
+	my_dog->age = age;
 	return (my_dog);
 }

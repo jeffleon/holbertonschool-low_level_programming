@@ -1,27 +1,35 @@
 #include "dog.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include "dog.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
- * _strdup - put other points
- * @str: the address of memory to print
+ *_strdup - returns a pointer to a newly allocated space in memory, which
+ *contains a copy of the string given as a parameter
+ *@str: char pointer argument
  *
- * Return: pointer char
+ *Return: char pointer
  */
 char *_strdup(char *str)
 {
-	char *point = NULL;
-	int count = 0, i = 0;
+	char *poin = NULL;
+
+	int i, j = 0;
 
 	if (str == NULL)
 		return (NULL);
-	for (count = 0; *(str + count) != '\0'; count++)
-	{}
-	point = malloc(sizeof(char) * count + 1);
-	if (point == NULL)
+	for (i = 0; *(str + i); i++)
+	{
+		j++;
+	}
+	j++;
+	poin = malloc(j * sizeof(char));
+	if (poin == NULL)
 		return (NULL);
-	for (i = 0; i < count; i++)
-		point[i] = str[i];
-	return (point);
+	for (i = 0; i < j; i++)
+		*(poin + i) = *(str + i);
+	return (poin);
 }
 /**
  * new_dog - put other points

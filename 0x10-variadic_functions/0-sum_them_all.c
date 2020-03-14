@@ -1,9 +1,9 @@
 #include <stdarg.h>
 /**
- * is_98 - check if a number is equal to 98
- * @elem: the integer to check
+ * sum_them_all - check if a number is equal to 98
+ * @n: the integer to check
  *
- * Return: 0 if false, something else otherwise.
+ * Return: sum
  */
 
 int sum_them_all(const unsigned int n, ...)

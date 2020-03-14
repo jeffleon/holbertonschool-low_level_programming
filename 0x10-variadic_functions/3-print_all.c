@@ -19,6 +19,7 @@ void ops(va_list letras)
 {
 	if (letras == NULL)
 	printf("(nil)");
+	else
 	printf("%s", va_arg(letras, char*));
 }
 /**

@@ -1,9 +1,4 @@
-/**
- * struct op - Struct op
- *
- * @op: The operator
- * @f: The function associated
- */
+
 #ifndef OP
 #define OP
 #include <stdarg.h>

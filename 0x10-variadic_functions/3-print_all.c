@@ -17,6 +17,8 @@ void opf(va_list flotante)
  */
 void ops(va_list letras)
 {
+	if (letras == NULL)
+	printf("(nil)");
 	printf("%s", va_arg(letras, char*));
 }
 /**

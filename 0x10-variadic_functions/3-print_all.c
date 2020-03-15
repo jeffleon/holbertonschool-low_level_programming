@@ -17,10 +17,11 @@ void opf(va_list flotante)
  */
 void ops(va_list letras)
 {
-	if (letras == NULL)
-	printf("(nil)");
-	else
-	printf("%s", va_arg(letras, char*));
+	char *j = va_arg(letras, char*);
+
+	if (j == NULL)
+		j = "(nil)";
+	printf("%s", j);
 }
 /**
  * opc - check if a number is equal to 98
@@ -50,7 +51,7 @@ void print_all(const char * const format, ...)
 {
 	int i = 0, j = 0;
 	char *coma = "";
-	struct letras choice[] = {
+	st choice[] = {
 				{"i", opi},
 				{"f", opf},
 				{"c", opc},
@@ -61,17 +62,17 @@ void print_all(const char * const format, ...)
 	va_start(arguments, format);
 	while (format && format[i])
 	{
-	j = 0;
-	while (j < 4)
-	{
-		if (choice[j].letter[0] == format[i])
+		j = 0;
+		while (j < 4)
 		{
-			printf("%s", coma);
-			choice[j].f(arguments);
-			coma = ", ";
+			if (choice[j].letter[0] == format[i])
+			{
+				printf("%s", coma);
+				choice[j].f(arguments);
+				coma = ", ";
+			}
+			j++;
 		}
-		j++;
-	}
 	i++;
 	}
 	va_end(arguments);

@@ -7,11 +7,11 @@
  * @letter: the integer to check
  * @f: funtion a puntero
  */
-struct letras
+typedef struct letras
 {
 	char *letter;
 	void (*f)(va_list);
-};
+}st;
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);

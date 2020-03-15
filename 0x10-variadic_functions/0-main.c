@@ -1,5 +1,7 @@
 #include "variadic_functions.h"
 
+#include "variadic_functions.h"
+
 /**
  * main - check the code for Holberton School students.
  *
@@ -7,6 +9,6 @@
  */
 int main(void)
 {
-    print_all("ceis", 'H', 0, "lberton");
+    print_strings(", ", 2, "Jay", "Django");
     return (0);
 }

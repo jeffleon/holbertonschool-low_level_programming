@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "lists.h"
 /**
  * thisbeforeMain - function that prints You're beat! and yet, you must allow,
  *

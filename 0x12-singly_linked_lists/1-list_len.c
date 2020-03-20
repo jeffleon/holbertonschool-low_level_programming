@@ -10,7 +10,7 @@ size_t list_len(const list_t *h)
 	const list_t *copia;
 	size_t i = 0;
 
-	copia = h
+	copia = h;
 	while (copia)
 	{
 		i++;

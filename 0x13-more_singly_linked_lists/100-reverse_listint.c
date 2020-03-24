@@ -1,28 +1,25 @@
 #include "lists.h"
 /**
- * listint_len - singly linked list
- * @h: string - (malloc'ed string)
+ * reverse_listint - this function reverse a link list
+ * @head: its a head of linked list - (malloc'ed string)
  *
- * Return: a number
+ * Return: a head of link list
  */
 listint_t *reverse_listint(listint_t **head)
 {
-        const listint *copia_in = h, *copia_end = h;
-        size_t count_end = 0, count_in = 0, tmp;
+	listint_t *tmp = *head;
+	listint_t *change = *head;
 
-        for (;copia_in;copia_in = copia_in->next)
-		count++;
-	if (copia == NULL)
-                return (0);
-	copia_in = *head;
-        for (;copia_in && count_in < 0; count_in--, copia_in = copia_in->next)
+	if (*head == NULL)
+		return (NULL);
+	tmp = change->next;
+	change->next = NULL;
+	while (tmp)
 	{
-		for (;copia_end && count_end < 0; count_end--, copia_end = copia_end->next)
-        	{
-			copia_in->n = tmp;
-			copia_in->n = copia_end->n;
-			copia_end->n = tmp:
-        	}
+		change = tmp;
+		tmp = tmp->next;
+		change->next = *head;
+		*head = change;
 	}
-        return (*head);
+	return(*head);
 }

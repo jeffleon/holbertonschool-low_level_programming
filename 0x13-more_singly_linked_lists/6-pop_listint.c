@@ -12,17 +12,13 @@ int pop_listint(listint_t **head)
 	int n = 0;
 
 	if (head == NULL)
-	{
-		printf("List is already empty.");
 		return (0);
-	}
 	else
 	{
 		toDelete = *head;
 		n = toDelete->n;
 		*head = toDelete->next;
 		free(toDelete);
-		printf("SUCCESSFULLY DELETED FIRST NODE FROM LIST\n");
 	}
 	return (n);
 }

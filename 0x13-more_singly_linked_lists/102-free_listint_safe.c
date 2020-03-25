@@ -5,7 +5,7 @@
  *
  * Return: a counter
  */
-listint_t *find_listint_loop(listint_t *head)
+size_t free_listint_safe(listint_t **h)
 {
 	const listint_t *no_loop = head;
 	const listint_t *no_loop2;

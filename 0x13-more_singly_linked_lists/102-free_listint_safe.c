@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * free_listint_loop - singly linked list
+ * free_listint_safe - singly linked list
  * @h: the head of linked list - (malloc'ed string)
  *
  * Return: a counter
@@ -22,5 +22,6 @@ size_t free_listint_safe(listint_t **h)
 		if (no_loop >= no_loop2)
 			break;
 	}
+	*h = NULL;
 	return (count);
 }

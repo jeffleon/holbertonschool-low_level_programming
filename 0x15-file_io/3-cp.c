@@ -18,9 +18,8 @@ int main(int argc, char *argv[])
 	fd = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fd == -1)
 		dprintf(STDERR_FILENO, ERROR98, argv[1]), exit(98);
-	while (data > 0)
+	while ((data = read(fs, buffer, 1024)))
 	{
-		data = read(fs, buffer, 1024);
 		if (data == -1)
 			dprintf(STDERR_FILENO, ERROR98, argv[1]), exit(98);
 		writed = write(fd, buffer, data);

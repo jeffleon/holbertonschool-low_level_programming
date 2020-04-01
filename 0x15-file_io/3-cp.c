@@ -43,5 +43,6 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, ERROR100, fs);
 		exit(100);
 	}
+	free(buffer);
 	return (0);
 }

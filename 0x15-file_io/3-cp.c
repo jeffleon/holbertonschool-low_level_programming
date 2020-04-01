@@ -15,13 +15,13 @@ int main(int argc, char **argv)
 	fs = open(argv[1], O_RDONLY);
 	if (fs == -1)
 		dprintf(STDERR_FILENO, ERROR98, argv[1]), exit(98);
-	fd = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	fd = open(argv[2], (O_CREAT | O_WRONLY | O_TRUNC), 0664);
 	if (fd == -1)
 		dprintf(STDERR_FILENO, ERROR98, argv[1]), exit(98);
 	while ((data = read(fs, buffer, 1024)) > 0)
 	{
 		wrote = write(fd, buffer, data);
-		if (wrote == -1)
+		if ((wrote != data) || (wrote == -1))
 			dprintf(STDERR_FILENO, ERROR99, argv[2]), exit(99);
 	}
 	if (data == -1)

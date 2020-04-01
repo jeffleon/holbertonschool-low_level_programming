@@ -8,14 +8,13 @@
 int main(int argc, char *argv[])
 {
 	int fd, fs, data, writed;
-	char *buffer;
+	char buffer[1024];
 
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, ERROR97);
 		exit(97);
 	}
-	buffer = malloc(sizeof(char) * 1024);
 	fs = open(argv[1], O_RDONLY);
 	fd = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
 	while (data > 0)
@@ -43,6 +42,5 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, ERROR100, fs);
 		exit(100);
 	}
-	free(buffer);
 	return (0);
 }

@@ -16,8 +16,7 @@ int main(int argc, char **argv)
 	if (fs == -1)
 		dprintf(STDERR_FILENO, ERROR98, argv[1]), exit(98);
 	fd = open(argv[2], (O_CREAT | O_WRONLY | O_TRUNC), 0664);
-	if (fd == -1)
-		dprintf(STDERR_FILENO, ERROR98, argv[1]), exit(98);
+
 	while ((data = read(fs, buffer, 1024)) > 0)
 	{
 		wrote = write(fd, buffer, data);

@@ -30,6 +30,8 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	unsigned int i = 0;
 	size_t length = 0;
 
+	if (head == NULL || *head == NULL)
+		return (NULL);
 	length = dlistint_len(*h);
 	if (idx > length)
 		return (NULL);

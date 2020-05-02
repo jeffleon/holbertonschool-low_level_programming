@@ -6,14 +6,15 @@
  */
 size_t dlistint_len(const dlistint_t *h)
 {
-	const dlistint_t *copy = h;
-	size_t i = 0;
+	size_t count = 0;
+	const dlistint_t *temp = h;
 
-	if (copy == NULL)
-		return (0);
-	for (; copy; copy = copy->next, i++)
-	{}
-	return (i);
+	while (temp)
+	{
+		count++;
+		temp = temp->next;
+	}
+	return (count);
 }
 /**
  * insert_dnodeint_at_index - singly linked list

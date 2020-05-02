@@ -6,9 +6,12 @@
  */
 void free_dlistint(dlistint_t *head)
 {
-	if (head != NULL)
+	if (!head)
+		return;
+	if (*head != NULL)
 	{
-		free_listint(head->next);
-		free(head);
+		free_dlistint(&((*head)->next));
+		free(*head);
+		*head = NULL;
 	}
 }

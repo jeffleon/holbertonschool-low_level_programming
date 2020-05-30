@@ -1,4 +1,9 @@
 #include "hash_tables.h"
+/**
+ * hash_djb2 - singly linked list
+ * @str: string - (malloc'ed string)
+ * Return: a number
+ */
 
 unsigned long int hash_djb2(const unsigned char *str)
 {

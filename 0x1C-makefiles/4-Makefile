@@ -6,7 +6,7 @@ OBJ= $(patsubst %.c,%.o,$(SRC))
 RM= rm -f
 all: $(OBJ)
         $(CC) $(CFLAGS) $(OBJ) -o $(NAME)
-.PHONY: clean oclean fclean re
+.PHONY: clean oclean fclean
 clean:
         $(RM) *~ $(NAME)
 oclean:

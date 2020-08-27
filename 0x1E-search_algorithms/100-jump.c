@@ -1,10 +1,12 @@
 #include <math.h>
 #include "search_algos.h"
 /**
- * linear_search - its a function that search in array
+ * lnrSearch - its a function that print and do a linear search
  * @array: its array to search
  * @size: its the size to the array
  * @value: its the value to search
+ * @left: its the begin index for print array
+ * @rigth: its the end index for print array
  *
  * Return: -1 if value is not present in array or if array is NULL, otherwise
  * the first index where value is located
@@ -26,7 +28,7 @@ int lnrSearch(int *array, int left, int rigth, int value, size_t size)
 }
 
 /**
- * linear_search - its a function that search in array
+ * jump_search - its a function to jump search
  * @array: its array to search
  * @size: its the size to the array
  * @value: its the value to search
@@ -40,6 +42,8 @@ int jump_search(int *array, size_t size, int value)
 	int lft = 0;
 	int rgth = jmp;
 
+	if (array == NULL)
+		return (-1);
 	for (; lft <= (int) size - 1; lft = rgth, rgth += jmp)
 	{
 		printf("Value checked array[%d] = [%d]\n", lft, array[lft]);

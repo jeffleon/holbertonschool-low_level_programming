@@ -15,7 +15,7 @@ void printarray(int *array, int left, int rigth)
   for(;left <= rigth; left++)
   {
     sep = left == rigth ? '\n': ',';
-    printf(" %d%c", array[left],sep);
+    printf(" %d%c", array[left], sep);
   }
 }
 
@@ -46,7 +46,7 @@ int binary_search(int *array, size_t size, int value)
     else if (array[mid] < value)
       left = mid + 1;
     else if (array[mid] > value)
-      rigth = mid -1;
+      rigth = mid - 1;
   }
   return (-1);
 }

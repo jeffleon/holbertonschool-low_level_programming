@@ -14,11 +14,9 @@ void printarray(int *array, int left, int rigth)
   printf("Searching in array:");
   for(;left <= rigth; left++)
   {
-    sep = left == rigth ? '\0': ',';
+    sep = left == rigth ? '\n': ',';
     printf(" %d%c", array[left],sep);
   }
-  printf("\n");
-  
 }
 
 /**

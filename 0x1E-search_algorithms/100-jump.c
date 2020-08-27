@@ -42,7 +42,7 @@ int jump_search(int *array, size_t size, int value)
 	int lft = 0;
 	int rgth = jmp;
 
-	if (array == NULL)
+	if (array == NULL || size == 0)
 		return (-1);
 	for (; lft <= (int) size - 1; lft = rgth, rgth += jmp)
 	{
